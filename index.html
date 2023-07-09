@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занятие на лето</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <a class="navig" href="#generate">Генератор занятий на лето</a>
+        <a class="navig" href="#top">Топ занятий на лето</a>
+        <a class="navig" href="#also">Еще идеи</a>
+        <a class="navig" href="#Contacts">Контакты</a>
+    </nav>
+    <div class="contain">
+        <header>
+            <h1>Чем можно занятся летом?</h1>
+            <p>Каждое лето <b>самое сложное</b> - это найти себе занятие. Здесь вы возможно сможете найти себе занятие.
+            </p>
+        </header>
+        <main>
+            <section id="generate">
+                <h2>Генератор занятий на лето(к сожалению только на английском)</h2>
+                <p>Если вам лень листать дальше, то вы можете найти себе занятие в этом <i>генераторе</i>.</p>
+                <div class="flexrow fcontrol">
+                    <div class="control">
+                        <p id="newAction" class="newAction"></p>
+                        <div style="display: flex; margin: 0px; justify-content: center;">
+                            <button class="add" id="newActionGenerateBtn" style="margin-right: 15px;">Сгенерировать
+                                занятие</button>
+                            <button class="add" id="addNewActionBtn">Добавить сгенерированое занятие в список</button>
+                        </div>
+                        <div style="display: flex; margin: 15px 0px 0px 0px; justify-content: center;">
+                            <input type="text" style="margin-right: 15px;" id="yourAction">
+                            <button class="add" id="addYourActionBtn">Добавить ваше занятие в список</button>
+                        </div>
+                        <button class="delete" id="deleteAction">Удалить последнее занятие</button>
+                    </div>
+                    <div class="actionList">
+                        <h3>Список ваших дел</h3>
+                        <p id="actionListText"></p>
+                    </div>
+                </div>
+            </section>
+            <section id="top">
+                <h2>Топ 3 занятия на лето</h2>
+                <div class="flexrow">
+                    <div class="flexrow_in">
+                        <h3>Покрасить черное море в черный цвет</h3>
+                        <img class="top sea" src="assets/scale_1200(3).webp" alt="черное море">
+                        <p class="sea">Очень увлекательное занятие на не очень долгий промежуток времени.</p>
+                        <img src="assets/Star.svg" alt="звезда"><img src="assets/Star.svg" alt="звезда"><img
+                            src="assets/Star.svg" alt="звезда"><img src="assets/Star.svg" alt="звезда">
+                    </div>
+
+                    <div class="flexrow_in">
+                        <h3>Потушить солнце водой</h3>
+                        <br>
+                        <img class="top" src="assets/sun.jpg" alt="солнце">
+                        <p>Это очень интереснo, но при этом не на долго. Рано или поздно вы устанете поливать его водой.
+                        </p>
+                        <img src="assets/Star.svg" alt="звезда"><img src="assets/Star.svg" alt="звезда"><img
+                            src="assets/Star.svg" alt="звезда">
+                    </div>
+                    <div class="flexrow_in">
+                        <h3>Научить людей из рекламы играть.</h3>
+                        <img class="top ad" src="assets/1628826719137933196.jpg" alt="реклама">
+                        <p>Это ооочень сложно, но при этом затягивающе интересно. Порой эти люди удивляют настолько, что
+                            хочется
+                            ударить их через экран. Так почему бы тогда не научить их играть!</p>
+                        <img src="assets/Star.svg" alt="звезда"><img src="assets/Star.svg" alt="звезда"><img
+                            src="assets/Star.svg" alt="звезда"><img src="assets/Star.svg" alt="звезда"><img
+                            src="assets/Star.svg" alt="звезда">
+                    </div>
+
+                </div>
+                <div class="flexrow">
+                    <a class="alink" href="activity1.html">Перейти...</a>
+                    <a class="alink" href="activity2.html">Перейти...</a>
+                    <a class="alink" href="activity3.html">Перейти...</a>
+                </div>
+            </section>
+            <section id="also">
+                <h2>Также можно:</h2>
+                <ul>
+                    <li>Посетить кинотеатр под открытым небом</li>
+                    <li>Создать свой летний музыкальный плейлист</li>
+                    <li>Вспомнить одну из детских игр и поиграть <em>с друзьями</em></li>
+                    <li>Пройти один образовательный курс</li>
+                    <li>Подвести итоги лета.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer id="Contacts">
+        <p>Телефон для связи: +7(777)777 77-77</p>
+        <p>Сайт сделан с помощью: Figma, Html, Css, JavaScript</p>
+        <div class="flexrow_logo">
+            <img class="programms" src="assets/figma.svg" alt="figma"><img class="programms"
+                src="assets/HTML5_logo_and_wordmark.svg.png" alt="html"><img class="programms css"
+                src="assets/CSS3_logo_and_wordmark.svg.png" alt="css"><img class="programms" src="assets/js-logo.png"
+                alt="js">
+        </div>
+        <br>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Правильный CSS!"/>
+            </a>
+        </p>
+        <div class="loader-2"></div>
+        <p>*Список топ занятий основывается исключительно на моем субъективном мнении*</p>
+        <p class="support">Поддержите меня пятеркой</p>
+        <p>*Сайт находится в состоянии доработки*</p>
+    </footer>
+
+    <script>
+        "use strict"
+
+        document.querySelector("#newActionGenerateBtn").addEventListener('click', function () {
+            let xhr = new XMLHttpRequest()
+            xhr.open("GET", "https://www.boredapi.com/api/activity", true);
+            xhr.send();
+            xhr.addEventListener('readystatechange', function () {
+                if (xhr.status == 200 && xhr.readyState == 4) {
+                    document.querySelector("#newAction").innerHTML = JSON.parse(xhr.responseText)["activity"]
+                }
+            });
+        });
+
+        let elemsList = []
+
+        document.querySelector("#addNewActionBtn").addEventListener('click', function () {
+            let newActionElem = document.createElement('p')
+            elemsList.push(document.querySelector("#newAction").innerHTML)
+            for (let i = 0; i < elemsList.length; i++) {
+                newActionElem.innerHTML = elemsList[i]
+            }
+            document.querySelector("#actionListText").appendChild(newActionElem)
+        });
+
+        document.querySelector("#addYourActionBtn").addEventListener('click', function () {
+            let newActionElem = document.createElement('p')
+            elemsList.push(document.querySelector("#yourAction").value)
+            for (let i = 0; i < elemsList.length; i++) {
+                newActionElem.innerHTML = elemsList[i]
+            }
+            document.querySelector("#actionListText").appendChild(newActionElem)
+        });
+        document.querySelector("#deleteAction").addEventListener('click', function () {
+            document.querySelector("#actionListText").innerHTML = ''
+            elemsList.pop()
+            
+            for (let i = 0; i < elemsList.length; i++) {
+                let newActionElem = document.createElement('p')
+                newActionElem.innerHTML = elemsList[i]
+                document.querySelector("#actionListText").appendChild(newActionElem)
+            }
+            
+            
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,500;0,700;1,500&display=swap');
+
+.actionList{
+    width: 400px;
+    height: 590px;
+    background-color: rgb(198, 218, 201);
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.fcontrol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newAction{
+    text-align: center;
+    background-color: rgb(198, 218, 201);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+input{
+    outline: rgb(26, 82, 23) 5px double;
+    font-family: "Noto Sans Display", ital;
+    background-color: rgb(198, 218, 201);
+    border-radius: 5px;
+    font-size: 15px;
+}
+.add{
+    padding: 10px;
+    font-family: "Noto Sans Display";
+    border-radius: 20px;
+    border: rgb(160, 197, 166) 5px dashed;
+    background-color: rgb(198, 218, 201);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.add:hover{
+    background-color: rgb(160, 197, 166);
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.add:active{
+    background-color: rgb(54, 99, 61);
+}
+.control{
+    width: 50%;
+}
+.delete{
+    padding: 10px;
+    font-family: "Noto Sans Display";
+    border-radius: 20px;
+    border: rgb(160, 74, 74) 5px dashed;
+    background-color: rgb(204, 100, 100);
+    position: relative;
+    top: 20px;
+    left: 200px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.delete:hover{
+    background-color: rgb(160, 74, 74);
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.delete:active{
+    background-color: rgb(105, 28, 28);
+}
+.loader-2 {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: loader-2 0.9s 0.35s ease alternate infinite;
+    animation: loader-2 0.9s 0.35s ease alternate infinite;
+    margin: -20px auto 0;
+}
+.loader-2:after,
+.loader-2:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: loader-2 0.9s ease alternate infinite;
+    -webkit-animation: loader-2 0.9s ease alternate infinite;
+}
+
+.loader-2:before {
+    left: -20px;
+    animation-delay: 0.2s;
+}
+
+.loader-2:after {
+    right: -20px;
+    animation-delay: 0.5s;
+}
+
+@keyframes loader-2 {
+    0% {
+        box-shadow: 0 15px 0 -15px #000;
+    }
+
+    100% {
+        box-shadow: 0 15px 0 #000;
+    }
+}
+
+@-webkit-keyframes loader-2 {
+    0% {
+        box-shadow: 0 15px 0 -15px #000;
+    }
+
+    100% {
+        box-shadow: 0 15px 0 #000;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: rgb(221, 234, 223);
+}
+
+section {
+    margin: 10% 0;
+}
+
+p {
+    font-family: "Noto Sans Display";
+    color: black
+}
+
+a {
+    font-family: "Noto Sans Display", ital;
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    transition: all 0.5s;
+}
+
+a:hover {
+    font-size: 140%;
+    color: rgb(26, 82, 23)
+}
+
+.flexrow>a:hover {
+    font-size: 113%;
+    color: rgb(26, 82, 23);
+}
+
+h1 {
+    color: black;
+    font-family: "Noto Sans Display";
+}
+
+h2 {
+    color: black;
+    font-family: "Noto Sans Display";
+}
+
+h3 {
+    color: black;
+    font-family: "Noto Sans Display";
+}
+
+li {
+    color: black;
+    font-family: "Noto Sans Display";
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    background-color: rgb(198, 218, 201);
+    border-radius: 20px;
+    flex-grow: 1000;
+}
+
+footer {
+    background-color: rgb(189, 213, 193);
+    text-align: center;
+    padding: 150px;
+    height: 300px;
+}
+
+footer>p {
+    color: rgb(110, 109, 109)
+}
+
+.contain {
+    margin: auto;
+    width: 65%;
+}
+
+.navig {
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.navig:hover {
+    font-size: 24px;
+    transition: all 0.5s;
+}
+
+header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.top {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+.sea {
+    position: relative;
+    bottom: 23px;
+}
+
+.flexrow {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexrow_in {
+    display: flex;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.alink {
+    position: relative;
+    bottom: 20px;
+    right: 120px;
+    transform: rotate(-5deg);
+}
+
+.programms {
+    width: 55px;
+    height: 55px;
+}
+
+.flexrow_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.css {
+    width: 40px;
+}
+
+.activity_photo {
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    margin: 50px;
+}
+
+.flex_activity {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+ol>li {
+    font-size: 18px;
+}
+
+.flex_activity>div>p {
+    font-size: 23px;
+}
+
+.back {
+    position: relative;
+    right: 890px;
+    bottom: 130px;
+    font-size: 18px;
+}
+
+i {
+    font-size: 110%;
+    font-family: "Noto Sans Display", sans-serif;
+}
+
+em {
+    font-size: 115%;
+    font-family: "Noto Sans Display", sans-serif;
+}
+
+@media (max-width: 767px) {
+    header{
+        display: block;
+        height: auto;
+    }
+    .menu{
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .navig{
+        background-color: rgb(198, 218, 201);
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+        height: 50px;
+        margin: 5px 0;
+    }
+
+    .flexrow_in {
+        flex-basis: 100%;
+    }
+    .contain, footer{
+        position: relative;
+        top: 150px;
+    }
+    footer{
+        text-align: center;
+        padding: 20px;
+        height: 600px;
+    }
+    .alink{
+        margin: 150px 0;
+        position: relative;
+        bottom: 1050px;
+    }
+    .activity_photo{
+        width: 300px;
+        height: 300px;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin: 0;
+        position: relative;
+        right: 20px;
+    }
+    .flex_activity{
+        margin: 0;
+        display: block;
+    }
+    .back{
+        position: static;
+    }
+}
+@media (min-width: 768px) and (max-width: 1700px) {
+    .flexrow_in {
+        flex-basis: 33%;
+    }
+    .back{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .ad{
+        position: relative;
+        top: 20px;
+    }
+}
